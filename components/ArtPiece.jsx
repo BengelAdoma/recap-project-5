@@ -1,6 +1,5 @@
 import ArtPiecePreview from "./ArtPiecePreview";
 
-
 export default function ArtPiece({ artPieces }) {
   return (
     <div>

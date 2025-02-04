@@ -1,10 +1,8 @@
 import ArtPiecePreview from '@/components/ArtPiecePreview'
 import React, { useEffect, useState } from 'react'
 
-export default function SpotlightPage ({artPieces, name}) {
+export default function Spotlight({ artPieces }) {
     const [randomArtPiece, setRandomArtPiece] = useState()
-    console.log(name)
-    console.log("SPOTLIGHT PAGE:", artPieces)
     useEffect(()=> {
         if (artPieces && artPieces.length > 0) {
             const randomIndex = Math.floor(Math.random() * artPieces.length);
@@ -17,12 +15,14 @@ export default function SpotlightPage ({artPieces, name}) {
       
   
   return (
+  <>  
+  <h1>SPOTLIGHT</h1>
   <ArtPiecePreview
           key={randomArtPiece.slug}
           image={randomArtPiece.imageSource}
           title={randomArtPiece.name}
           artist={randomArtPiece.artist}
         />
+  </>
   )
 }
-
