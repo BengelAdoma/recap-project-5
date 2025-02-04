@@ -1,9 +1,12 @@
 import ArtPiece from "@/components/ArtPiece";
+import Spotlight from "@/components/Spotlight";
 
-export default function HomePage({artPieces, name}) {
-  console.log(name)
-  console.log("HOMEPAGE PAGE:", artPieces)
+export default function HomePage({artPieces}) {   
   return (
-       <ArtPiece artPieces={artPieces} />
+  <>
+    <Spotlight artPieces={artPieces}/>
+    <h1>GALLERY</h1>
+     <ArtPiece artPieces={artPieces} />
+     </>
   );
 }
