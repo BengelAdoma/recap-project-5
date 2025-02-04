@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import ArtPiece from "./ArtPiece";
+import ArtPiece from "./ArtPieces";
 
 export default function GalleryPage() {
   const [artPieces, setArtPieces] = useState([]);
