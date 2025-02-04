@@ -19,7 +19,7 @@ export default function App({ Component, pageProps }) {
 
   return (
     <>
-      <GlobalStyle />
+      <GlobalStyle/>
       <Component {...pageProps} artPieces={artPieces}/>
       <Navigation/>
     </>

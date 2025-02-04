@@ -1,4 +1,4 @@
-import ArtPiece from "@/components/ArtPiece";
+import ArtPieces from "@/components/ArtPieces";
 import Spotlight from "@/components/Spotlight";
 
 export default function HomePage({artPieces}) {   
@@ -6,7 +6,7 @@ export default function HomePage({artPieces}) {
   <>
     <Spotlight artPieces={artPieces}/>
     <h1>GALLERY</h1>
-     <ArtPiece artPieces={artPieces} />
+     <ArtPieces artPieces={artPieces} />
      </>
   );
 }
