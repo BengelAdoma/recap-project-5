@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import GlobalStyle from "../styles";
+import Navigation from "@/components/navigation";
 // import GalleryPage from "@/components/GalleryPage";
 
 
@@ -20,6 +21,7 @@ export default function App({ Component, pageProps }) {
     <>
       <GlobalStyle />
       <Component {...pageProps} artPieces={artPieces}/>
+      <Navigation/>
     </>
   );
 }
